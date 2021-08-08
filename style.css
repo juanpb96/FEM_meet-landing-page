@@ -1,3 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
+/* Colors */
+/* Font */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background-color: #fafafa;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #28283e;
+}
+
+.intro-title, .btn, .number p {
+  font-family: "Red Hat Display", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.625rem;
+}
+
+.info {
+  margin-bottom: 2rem;
+  color: #86869c;
+  font-family: "Red Hat Display", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.625rem;
+}
+.info--footer {
+  color: #fafafa;
+  font-size: 1.125rem;
+}
+
+.btn {
+  display: block;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 1.8125rem;
+  color: #fafafa;
+  cursor: pointer;
+}
+.btn--teal {
+  background-color: #4d96a8;
+}
+.btn--teal .version {
+  color: #90e4f9;
+}
+.btn--purple {
+  background-color: #845eb0;
+}
+.btn--purple .version {
+  color: #d9b8ff;
+}
+
+.logo {
+  display: block;
+  margin: 3rem auto 3.375rem;
+}
+
+.hero__people {
+  display: block;
+  min-height: 153px;
+  width: 100%;
+  background: url(./assets/tablet/image-hero.png) no-repeat center;
+  background-size: cover;
+}
+.hero__description {
+  width: 90%;
+  margin: 3rem auto 4rem;
+}
+.hero__description h1 {
+  width: 80%;
+  margin: 0 auto 1.5rem;
+  font-family: "Red Hat Display", Helvetica, Arial, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 2.75rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.buttons .btn:first-child {
+  margin-bottom: 1rem;
+}
 
 /*# sourceMappingURL=style.css.map */
