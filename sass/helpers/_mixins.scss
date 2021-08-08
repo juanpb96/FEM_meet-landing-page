@@ -1,0 +1,13 @@
+@mixin title-font ($size, $line-height) {
+    font-family: $f-family;
+    font-size: $size;
+    font-weight: 900;
+    line-height: $line-height;
+}
+
+@mixin text-font ($size) {
+    font-family: $f-family;
+    font-size: $size;
+    font-weight: 500;
+    line-height: 1.625rem;
+}
