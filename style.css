@@ -22,6 +22,13 @@ h1, h2 {
   color: #28283e;
 }
 
+h2 {
+  font-family: "Red Hat Display", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 2.25rem;
+}
+
 .intro-title, .btn, .number p {
   font-family: "Red Hat Display", Helvetica, Arial, sans-serif;
   font-size: 1rem;
@@ -70,6 +77,7 @@ h1, h2 {
 
 .hero {
   flex-direction: column;
+  overflow: hidden;
 }
 .hero__people--desktop {
   display: none;
@@ -108,6 +116,7 @@ h1, h2 {
   color: #86869c;
   border-radius: 50%;
   border: 1px solid rgba(134, 134, 156, 0.25);
+  background-color: #fafafa;
 }
 .number::before {
   content: "";
@@ -118,6 +127,10 @@ h1, h2 {
   left: 50%;
   opacity: 0.25;
   border-left: 1px solid #86869c;
+}
+.number--absolute {
+  bottom: calc(-56px / 2);
+  z-index: 2;
 }
 
 .photos {
@@ -132,6 +145,56 @@ h1, h2 {
 }
 .photos__square:nth-child(1), .photos__square:nth-child(2) {
   margin-bottom: 1.5rem;
+}
+
+.intro-title {
+  color: #4d96a8;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+main {
+  padding-bottom: 4rem;
+}
+main h2, main .info {
+  width: 85%;
+}
+main h2 {
+  margin: 0 auto 2rem;
+}
+main .info {
+  margin: 0 auto;
+}
+
+footer {
+  position: relative;
+  background-color: #4d96a8;
+  padding: 5.75rem 1.5rem 4.5rem;
+  mix-blend-mode: normal;
+  z-index: 1;
+}
+footer::before {
+  content: "";
+  background: url(./assets/mobile/image-footer.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  opacity: 0.1;
+}
+footer h2 {
+  color: #fafafa;
+  margin-bottom: 1.5rem;
+}
+footer .info--footer {
+  margin-bottom: 2rem;
+}
+footer .btn {
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
