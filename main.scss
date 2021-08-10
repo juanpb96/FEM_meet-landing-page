@@ -217,3 +217,72 @@ footer {
         margin: 0 auto;
     }
 }
+
+@media only screen and (min-width: 768px) {
+    // Header
+    .hero {
+        &__description {
+            width: 59.5%;
+            max-width: 33.75rem;
+
+            h1 {
+                @include title-font(3rem, 3rem);
+            }
+        }
+    }
+
+    .buttons {
+        flex-direction: row;
+
+        .btn:first-child {
+            margin-right: 1rem;
+            margin-bottom: 0;
+        }
+    }
+
+    // Main
+
+    .photos {
+        flex-wrap: nowrap;
+        margin: 4.1875rem 2.5rem 3rem;
+
+        &__square {
+            width: 23.8%;
+
+            &:nth-child(1), &:nth-child(2) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    main {
+        padding-bottom: 5rem;
+
+        h2 {
+            max-width: 445px;
+        }
+
+        .info {
+            width: 74.6%;
+        }
+    }
+
+    h2 {
+        @include title-font(2.5rem, 2.75rem);
+    }
+
+    // Footer
+
+    footer {
+        padding: 5.75rem 6.125rem 4.125rem;
+
+        &::before {
+            background-image: url(./assets/tablet/image-footer.jpg);
+        }
+
+        h2 {
+            width: 79.9%;
+            margin: 0 auto 2rem;
+        }
+    }
+}
