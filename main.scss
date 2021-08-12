@@ -315,6 +315,12 @@ footer {
         }
     }
     
+    .number {
+        &--absolute {
+            margin-top: 72px;
+        }
+    }
+
     //Header
     .logo {
         margin: 5rem auto 3.8125rem;

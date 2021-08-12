@@ -278,6 +278,10 @@ footer .btn {
     background-color: #b28cde;
   }
 
+  .number--absolute {
+    margin-top: 72px;
+  }
+
   .logo {
     margin: 5rem auto 3.8125rem;
   }
