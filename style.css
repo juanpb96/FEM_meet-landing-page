@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
 /* Colors */
+/* Active colors */
 /* Font */
 .number, .buttons, .hero {
   display: flex;
@@ -231,6 +232,9 @@ footer .btn {
   main {
     padding-bottom: 5rem;
   }
+  main .intro-title {
+    margin-bottom: 1rem;
+  }
   main h2 {
     max-width: 445px;
   }
@@ -254,6 +258,87 @@ footer .btn {
   footer h2 {
     width: 79.9%;
     margin: 0 auto 2rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .info {
+    font-family: "Red Hat Display", Helvetica, Arial, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.625rem;
+  }
+
+  .btn:hover {
+    opacity: 0.8;
+  }
+  .btn--teal:active {
+    background-color: #72c1d5;
+  }
+  .btn--purple:active {
+    background-color: #b28cde;
+  }
+
+  .logo {
+    margin: 5rem auto 3.8125rem;
+  }
+
+  .hero {
+    position: relative;
+    margin-bottom: 12.125rem;
+  }
+  .hero__people--desktop {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 104.5%;
+    max-width: 1504px;
+    height: 100%;
+    background: url(./assets/desktop/image-hero-left.png) no-repeat left top, url(./assets/desktop/image-hero-right.png) no-repeat right bottom;
+  }
+  .hero__people--mobile {
+    display: none;
+  }
+  .hero__description {
+    margin-bottom: 0;
+  }
+  .hero__description h1 {
+    margin-bottom: 2.125rem;
+    font-family: "Red Hat Display", Helvetica, Arial, sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 4rem;
+  }
+
+  .photos {
+    margin: 4rem auto 5rem;
+    max-width: 1110px;
+  }
+
+  main .info {
+    width: 37.5%;
+    max-width: 540px;
+  }
+
+  footer {
+    padding: 7.25rem 0 6.5rem;
+    text-align: left;
+  }
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+  footer::before {
+    background-image: url(./assets/desktop/image-footer.jpg);
+  }
+  footer h2, footer .info--footer {
+    width: 41%;
+    max-width: 350px;
+  }
+  footer h2, footer .info--footer, footer .btn {
+    margin: 0;
   }
 }
 

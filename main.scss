@@ -258,6 +258,10 @@ footer {
     main {
         padding-bottom: 5rem;
 
+        .intro-title {
+            margin-bottom: 1rem;
+        }
+
         h2 {
             max-width: 445px;
         }
@@ -283,6 +287,109 @@ footer {
         h2 {
             width: 79.9%;
             margin: 0 auto 2rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    // General styles
+    .info {
+        @include text-font(1.125rem);
+    }
+
+    .btn {
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &--teal {
+            &:active {
+                background-color: $active-teal;
+            }
+        }
+
+        &--purple {
+            &:active {
+                background-color: $active-purple;
+            }
+        }
+    }
+    
+    //Header
+    .logo {
+        margin: 5rem auto 3.8125rem;
+    }
+
+    .hero {
+        position: relative;
+        margin-bottom: 12.125rem;
+
+        &__people {
+            &--desktop {
+                display: block;
+                position: absolute;
+                z-index: -1;
+                width: 104.5%;
+                max-width: 1504px;
+                height: 100%;
+                background: url(./assets/desktop/image-hero-left.png) no-repeat left top, 
+                            url(./assets/desktop/image-hero-right.png) no-repeat right bottom;
+            }
+
+            &--mobile {
+                display: none;
+            }
+        }
+
+        &__description {
+            margin-bottom: 0;
+
+            h1 {
+                margin-bottom: 2.125rem;
+                @include title-font(4rem, 4rem);
+            }
+        }
+    }
+
+    // Main
+
+    .photos {
+        margin: 4rem auto 5rem;
+        max-width: 1110px;
+    }
+
+    main {
+        .info {
+            width: 37.5%;
+            max-width: 540px;
+        }
+    }
+
+    // Footer
+
+    footer {
+        padding: 7.25rem 0 6.5rem;
+        text-align: left;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1110px;
+            margin: 0 auto;
+        }
+
+        &::before {
+            background-image: url(./assets/desktop/image-footer.jpg);
+        }
+
+        h2, .info--footer {
+            width: 41%;
+            max-width: 350px;
+        }
+
+        h2, .info--footer, .btn {
+            margin: 0;
         }
     }
 }
