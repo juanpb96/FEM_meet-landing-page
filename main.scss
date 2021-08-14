@@ -365,6 +365,10 @@ footer {
     .photos {
         margin: 4rem auto 5rem;
         max-width: 1110px;
+
+        &__square:not(:last-child) {
+            margin-right: 1.875rem;
+        }
     }
 
     main {
