@@ -52,7 +52,7 @@ h2 {
 
 .btn {
   display: block;
-  padding: 1rem 2.5rem;
+  padding: 1rem 1.8125rem;
   border: none;
   border-radius: 1.8125rem;
   color: #fafafa;
@@ -69,6 +69,9 @@ h2 {
 }
 .btn--purple .version {
   color: #d9b8ff;
+}
+.btn--version {
+  padding: 1rem 2.5rem;
 }
 
 .logo {
@@ -91,7 +94,7 @@ h2 {
 }
 .hero__description {
   width: 90%;
-  margin: 3rem auto 4rem;
+  margin: 3rem auto 0;
 }
 .hero__description h1 {
   width: 80%;
@@ -130,8 +133,11 @@ h2 {
   border-left: 1px solid #86869c;
 }
 .number--absolute {
-  bottom: calc(-56px / 2);
+  position: absolute;
+  top: calc(-56px / 2);
+  left: calc(50% - 56px / 2);
   z-index: 2;
+  margin: 0;
 }
 
 .photos {
@@ -156,7 +162,7 @@ h2 {
 }
 
 main {
-  padding-bottom: 4rem;
+  margin-top: 9.25rem;
 }
 main h2, main .info {
   width: 85%;
@@ -171,6 +177,7 @@ main .info {
 footer {
   position: relative;
   background-color: #4d96a8;
+  margin-top: 11rem;
   padding: 5.75rem 1.5rem 4.5rem;
   mix-blend-mode: normal;
   z-index: 1;
@@ -230,7 +237,7 @@ footer .btn {
   }
 
   main {
-    padding-bottom: 5rem;
+    margin-top: 10.25rem;
   }
   main .intro-title {
     margin-bottom: 1rem;
@@ -250,6 +257,7 @@ footer .btn {
   }
 
   footer {
+    margin-top: 12rem;
     padding: 5.75rem 6.125rem 4.125rem;
   }
   footer::before {
@@ -276,10 +284,6 @@ footer .btn {
   }
   .btn--purple:active {
     background-color: #b28cde;
-  }
-
-  .number--absolute {
-    margin-top: 72px;
   }
 
   .logo {
@@ -318,12 +322,16 @@ footer .btn {
     max-width: 1110px;
   }
 
+  main {
+    margin-top: 12.125rem;
+  }
   main .info {
     width: 37.5%;
     max-width: 540px;
   }
 
   footer {
+    margin-top: 11.5rem;
     padding: 7.25rem 0 6.5rem;
     text-align: left;
   }
